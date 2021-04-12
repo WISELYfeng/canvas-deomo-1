@@ -49,3 +49,15 @@ if(isTouchDevice){  // 检测设备是否支持触屏
     }
 }
 
+const clearBtn = document.querySelector(".clearCanvas")
+clearBtn.addEventListener('click',()=>{
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+})
+
+window.onload = () =>{
+    const tip = document.querySelector('.tip')
+    tip.classList.add('remove')
+    setTimeout(()=>{
+        tip.remove()
+    },1800)
+}

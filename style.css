@@ -8,3 +8,42 @@
   #canvas {
     display: block;
   }
+
+  .tip{
+    max-width: 300px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translateX(-150px);
+  }
+  .tip >p {
+    margin:auto;
+    font-size: 18px;
+    font-weight:600;
+  }
+  
+  @keyframes fadeOut{
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: .5;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  .remove{
+    animation: 1.8s fadeOut;
+  }
+
+  .clearCanvas{
+    padding-left: 20px;
+    padding-top: 20px;
+    position: fixed;
+  }
+  .clearCanvas button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding:.5rem;
+  }
